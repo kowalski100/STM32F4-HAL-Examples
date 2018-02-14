@@ -1,6 +1,6 @@
 .\objects\stm32f4xx_it.o: Source\stm32f4xx_it.c
 .\objects\stm32f4xx_it.o: ..\STM32Cube_FW_F4_V1.19.0\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal.h
-.\objects\stm32f4xx_it.o: ..\GPIO-Blinky\stm32f4xx_hal_conf.h
+.\objects\stm32f4xx_it.o: ..\GPIO-Blinky\include\stm32f4xx_hal_conf.h
 .\objects\stm32f4xx_it.o: ..\STM32Cube_FW_F4_V1.19.0\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_rcc.h
 .\objects\stm32f4xx_it.o: ..\STM32Cube_FW_F4_V1.19.0\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_def.h
 .\objects\stm32f4xx_it.o: ..\STM32Cube_FW_F4_V1.19.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include\stm32f4xx.h

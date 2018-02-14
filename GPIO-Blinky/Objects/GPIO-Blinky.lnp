@@ -1,6 +1,6 @@
 --cpu=Cortex-M4.fp
-".\objects\main.o"
 ".\objects\stm32f4xx_it.o"
+".\objects\main.o"
 ".\objects\stm32f4xx_hal.o"
 ".\objects\stm32f4xx_hal_gpio.o"
 ".\objects\stm32f4xx_hal_cortex.o"
