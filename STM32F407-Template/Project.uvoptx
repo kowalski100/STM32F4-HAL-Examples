@@ -22,7 +22,7 @@
   </DaveTm>
 
   <Target>
-    <TargetName>GPIO-Blinky</TargetName>
+    <TargetName>STM32F407-Template</TargetName>
     <ToolsetNumber>0x4</ToolsetNumber>
     <ToolsetName>ARM-ADS</ToolsetName>
     <TargetOption>

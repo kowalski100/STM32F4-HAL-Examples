@@ -7,7 +7,7 @@
 
   <Targets>
     <Target>
-      <TargetName>GPIO-Blinky</TargetName>
+      <TargetName>STM32F407-Template</TargetName>
       <ToolsetNumber>0x4</ToolsetNumber>
       <ToolsetName>ARM-ADS</ToolsetName>
       <pCCUsed>5060422::V5.06 update 4 (build 422)::ARMCC</pCCUsed>
@@ -48,7 +48,7 @@
             <InvalidFlash>1</InvalidFlash>
           </TargetStatus>
           <OutputDirectory>.\Objects\</OutputDirectory>
-          <OutputName>GPIO-Blinky</OutputName>
+          <OutputName>STM32F407-Template</OutputName>
           <CreateExecutable>1</CreateExecutable>
           <CreateLib>0</CreateLib>
           <CreateHexFile>1</CreateHexFile>
@@ -335,7 +335,7 @@
               <MiscControls></MiscControls>
               <Define>USE_HAL_DRIVER,STM32F407xx</Define>
               <Undefine></Undefine>
-              <IncludePath>..\GPIO-Blinky;..\STM32Cube_FW_F4_V1.19.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include;..\STM32Cube_FW_F4_V1.19.0\Drivers\CMSIS\Include;..\STM32Cube_FW_F4_V1.19.0\Drivers\STM32F4xx_HAL_Driver\Inc;..\STM32Cube_FW_F4_V1.19.0\Drivers\STM32F4xx_HAL_Driver\Inc\Legacy;..\GPIO-Blinky\include</IncludePath>
+              <IncludePath>..\STM32F407-Template;..\STM32Cube_FW_F4_V1.19.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include;..\STM32Cube_FW_F4_V1.19.0\Drivers\CMSIS\Include;..\STM32Cube_FW_F4_V1.19.0\Drivers\STM32F4xx_HAL_Driver\Inc;..\STM32Cube_FW_F4_V1.19.0\Drivers\STM32F4xx_HAL_Driver\Inc\Legacy;..\STM32F407-Template\include</IncludePath>
             </VariousControls>
           </Cads>
           <Aads>
@@ -427,13 +427,13 @@
       <component Cclass="CMSIS" Cgroup="CORE" Cvendor="ARM" Cversion="5.0.1" condition="ARMv6_7_8-M Device">
         <package name="CMSIS" schemaVersion="1.3" url="http://www.keil.com/pack/" vendor="ARM" version="5.0.1"/>
         <targetInfos>
-          <targetInfo name="GPIO-Blinky"/>
+          <targetInfo name="STM32F407-Template"/>
         </targetInfos>
       </component>
       <component Cclass="Device" Cgroup="Startup" Cvendor="Keil" Cversion="2.6.0" condition="STM32F4 CMSIS">
         <package name="STM32F4xx_DFP" schemaVersion="1.3" url="http://www.keil.com/pack" vendor="Keil" version="2.11.0"/>
         <targetInfos>
-          <targetInfo name="GPIO-Blinky"/>
+          <targetInfo name="STM32F407-Template"/>
         </targetInfos>
       </component>
     </components>
@@ -443,7 +443,7 @@
         <component Cclass="Device" Cgroup="Startup" Cvendor="Keil" Cversion="2.6.0" condition="STM32F4 CMSIS"/>
         <package name="STM32F4xx_DFP" schemaVersion="1.3" url="http://www.keil.com/pack" vendor="Keil" version="2.11.0"/>
         <targetInfos>
-          <targetInfo name="GPIO-Blinky"/>
+          <targetInfo name="STM32F407-Template"/>
         </targetInfos>
       </file>
       <file attr="config" category="source" name="Drivers\CMSIS\Device\ST\STM32F4xx\Source\Templates\system_stm32f4xx.c" version="2.6.0">
@@ -451,7 +451,7 @@
         <component Cclass="Device" Cgroup="Startup" Cvendor="Keil" Cversion="2.6.0" condition="STM32F4 CMSIS"/>
         <package name="STM32F4xx_DFP" schemaVersion="1.3" url="http://www.keil.com/pack" vendor="Keil" version="2.11.0"/>
         <targetInfos>
-          <targetInfo name="GPIO-Blinky"/>
+          <targetInfo name="STM32F407-Template"/>
         </targetInfos>
       </file>
     </files>
