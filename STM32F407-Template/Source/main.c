@@ -19,8 +19,12 @@ int main () {
         initialize HAL Library. This step is mandatory
         for HAL libraries to work properly. It configures
         SysTick etc. for its internal configurations.
-    */
+     */
     HAL_Init();
+    
+    /*
+        IMPLEMENT YOUR SOFTWARE HERE
+     */
     
     return 0;
 }
