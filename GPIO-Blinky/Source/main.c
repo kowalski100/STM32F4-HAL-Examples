@@ -26,7 +26,7 @@ int main () {
     
     /*
         After HAL_Init(), System is running on default HSI 
-        clock (16MHz). PLL is disabled
+        clock (16MHz). PLL is disabled.
     */
     
     /* Enable clock to GPIO-D */
