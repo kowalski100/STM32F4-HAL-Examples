@@ -884,9 +884,9 @@ Command Line: --xref --diag_suppress=9931 --cpu=Cortex-M4.fp --apcs=interwork -
 -depend=.\objects\startup_stm32f407xx.d -o.\objects\startup_stm32f407xx.o -I.\R
 TE\_Timers -Ie:\Keil_v5\ARM\PACK\ARM\CMSIS\5.0.1\CMSIS\Include -Ie:\Keil_v5\ARM
 \PACK\Keil\STM32F4xx_DFP\2.11.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include --pre
-define="__EVAL SETA 1" --predefine="__UVISION_VERSION SETA 523" --predefine="_R
-TE_ SETA 1" --predefine="STM32F407xx SETA 1" --list=.\listings\startup_stm32f40
-7xx.lst RTE\Device\STM32F407VGTx\startup_stm32f407xx.s
+define="__UVISION_VERSION SETA 523" --predefine="_RTE_ SETA 1" --predefine="STM
+32F407xx SETA 1" --list=.\listings\startup_stm32f407xx.lst RTE\Device\STM32F407
+VGTx\startup_stm32f407xx.s
 
 
 
@@ -1990,4 +1990,4 @@ Symbol: __use_two_region_memory
       None
 Comment: __use_two_region_memory unused
 3 symbols
-449 symbols in table
+448 symbols in table

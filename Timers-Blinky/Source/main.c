@@ -4,9 +4,9 @@
  * @Warrenty:       void
  *
  * @description:    This program uses STM32F4-Discovery Timer-2 
- *                  in UP-COUNTER mode to generate constant time 
- *                  delay (0.5sec) /interrupt. Upon each interrupt,  
- *                  the on-board Blue-LED (PD#15) is blinked.
+ *                  in UP/DOWN-COUNTER mode to generate constant 
+ *                  time delay (0.5sec) /interrupt. Upon each interrupt,  
+ *                  the on-board Blue-LED (PD#15) is toggled.
  */
 
 /*
@@ -87,7 +87,7 @@ int main () {
     #endif
 
     /*
-        We want the time count of 500msec (half a second).
+        We want the time count to be 500msec (half a second).
         As the input frequency is 16khz so the total
         counts required for 500msec delay:
         
