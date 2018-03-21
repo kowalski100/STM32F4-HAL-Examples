@@ -156,11 +156,11 @@ static void initTimer(void) {
     TIM_Channel_InitStruct.Pulse        =   4000;
     HAL_TIM_OC_ConfigChannel(&TIM_InitStruct, &TIM_Channel_InitStruct, TIM_CHANNEL_2);
 
-    /* Channel-2 Configuration */
+    /* Channel-3 Configuration */
     TIM_Channel_InitStruct.Pulse        =   6000;
     HAL_TIM_OC_ConfigChannel(&TIM_InitStruct, &TIM_Channel_InitStruct, TIM_CHANNEL_3);
 
-    /* Channel-2 Configuration */
+    /* Channel-4 Configuration */
     TIM_Channel_InitStruct.Pulse        =   8000;
     HAL_TIM_OC_ConfigChannel(&TIM_InitStruct, &TIM_Channel_InitStruct, TIM_CHANNEL_4);
 
