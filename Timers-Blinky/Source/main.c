@@ -37,9 +37,7 @@ int main () {
         SysTick etc. for its internal configurations.
     */
     HAL_Init();
-
-    /* initialize blue-LED */
-    initLED();    
+   
 
     /*
         After HAL_Init(), System is running on default HSI 
@@ -48,7 +46,7 @@ int main () {
     */
     
    /*
-        initialize LED GPIO
+        initialize LED GPIO - Blue-LED
     */
     initLED();
     
