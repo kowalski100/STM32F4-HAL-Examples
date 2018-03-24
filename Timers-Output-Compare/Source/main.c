@@ -6,7 +6,7 @@
  * @description:    This code configures Timer-4 output
  *                  channels, connected to onboard GPIOS
  *                  in ouput compare mode. Each Channel
- *                  upon successful match, toggle on of 
+ *                  upon successful match, toggle one of 
  *                  the onboard LED.
  */
 
@@ -169,5 +169,5 @@ static void initTimer(void) {
     HAL_TIM_OC_Start(&TIM_InitStruct, TIM_CHANNEL_2);
     HAL_TIM_OC_Start(&TIM_InitStruct, TIM_CHANNEL_3);
     HAL_TIM_OC_Start(&TIM_InitStruct, TIM_CHANNEL_4);
-}
 
+}
