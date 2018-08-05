@@ -16,6 +16,22 @@
 void configureMCO_1 (void);
 
 int main () {
+
+
+  /*
+       initialize HAL Library. This step is mandatory
+       for HAL libraries to work properly. It configures
+       SysTick etc. for its internal configurations.
+  */
+  HAL_Init();
+    
+  /*
+       After HAL_Init(), System is running on default HSI 
+       clock (16MHz). PLL is disabled.
+  */
+
+ /**********************************************************************/
+
   
   /*
     configure MCO_1 to output HSI/4
