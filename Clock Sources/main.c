@@ -19,6 +19,20 @@ void SysClock_configPLL(void);
 
 int main () {
 
+   /*
+       initialize HAL Library. This step is mandatory
+       for HAL libraries to work properly. It configures
+       SysTick etc. for its internal configurations.
+   */
+   HAL_Init();
+    
+   /*
+       After HAL_Init(), System is running on default HSI 
+       clock (16MHz). PLL is disabled.
+   */
+
+ /**********************************************************************/
+
   /*
     NOTE: uncomment the one required 
   */
