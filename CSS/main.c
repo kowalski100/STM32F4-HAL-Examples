@@ -18,6 +18,22 @@ int main () {
   RCC_OscInitTypeDef RCC_OscInitStruct;
   RCC_ClkInitTypeDef RCC_ClkInitStruct;
 
+  
+  /*
+       initialize HAL Library. This step is mandatory
+       for HAL libraries to work properly. It configures
+       SysTick etc. for its internal configurations.
+  */
+  HAL_Init();
+    
+  /*
+       After HAL_Init(), System is running on default HSI 
+       clock (16MHz). PLL is disabled.
+  */
+
+ /**********************************************************************/
+
+  
   /*
     CSS is only applicable if system is directly or 
     indirectly (via PLL) fed from HSE oscillator.
@@ -66,31 +82,4 @@ int main () {
   }
   
 }
-
-/*
-  Interrupt Handler for NMI
-*/
-void NMI_Handler (void) {
-
-  /*
-    Verify if code security system has generated as interrupt  
-  */  
-  if ( RCC->CIR & (1U << 7)) {
-    
-    /*
-      clear the interrupt
-    */
-    RCC->CIR |= (1U << 23);
-    
-    /*
-     * Take appropriate action to reconfigure all the peripherals etc.
-     * based on the new HIGH SPEED Internal RC OSCILLATOR-HSI (16Mhz);
-     * AT THIS POINT SYSTEM IS RUNNING ON 16MHZ
-     */
-    
-    /* place for reconfiguration */
-  
-  }
-}
-
 
