@@ -22,7 +22,7 @@
   </DaveTm>
 
   <Target>
-    <TargetName>GPIO-Output</TargetName>
+    <TargetName>GPIO-Input</TargetName>
     <ToolsetNumber>0x4</ToolsetNumber>
     <ToolsetName>ARM-ADS</ToolsetName>
     <TargetOption>
@@ -187,8 +187,8 @@
       <tvExp>0</tvExp>
       <tvExpOptDlg>0</tvExpOptDlg>
       <bDave2>0</bDave2>
-      <PathWithFileName>.\main.c</PathWithFileName>
-      <FilenameWithoutPath>main.c</FilenameWithoutPath>
+      <PathWithFileName>.\stm32f4xx_it.c</PathWithFileName>
+      <FilenameWithoutPath>stm32f4xx_it.c</FilenameWithoutPath>
       <RteFlg>0</RteFlg>
       <bShared>0</bShared>
     </File>
@@ -199,8 +199,8 @@
       <tvExp>0</tvExp>
       <tvExpOptDlg>0</tvExpOptDlg>
       <bDave2>0</bDave2>
-      <PathWithFileName>.\stm32f4xx_it.c</PathWithFileName>
-      <FilenameWithoutPath>stm32f4xx_it.c</FilenameWithoutPath>
+      <PathWithFileName>.\main.c</PathWithFileName>
+      <FilenameWithoutPath>main.c</FilenameWithoutPath>
       <RteFlg>0</RteFlg>
       <bShared>0</bShared>
     </File>

@@ -7,7 +7,7 @@
 
   <Targets>
     <Target>
-      <TargetName>GPIO-Output</TargetName>
+      <TargetName>GPIO-Input</TargetName>
       <ToolsetNumber>0x4</ToolsetNumber>
       <ToolsetName>ARM-ADS</ToolsetName>
       <pCCUsed>5060422::V5.06 update 4 (build 422)::ARMCC</pCCUsed>
@@ -48,7 +48,7 @@
             <InvalidFlash>1</InvalidFlash>
           </TargetStatus>
           <OutputDirectory>.\Objects\</OutputDirectory>
-          <OutputName>GPIO-Output</OutputName>
+          <OutputName>GPIO-Input</OutputName>
           <CreateExecutable>1</CreateExecutable>
           <CreateLib>0</CreateLib>
           <CreateHexFile>0</CreateHexFile>
@@ -335,7 +335,7 @@
               <MiscControls></MiscControls>
               <Define>STM32F407xx</Define>
               <Undefine></Undefine>
-              <IncludePath>..\GPIO-Output</IncludePath>
+              <IncludePath>..\GPIO-Input</IncludePath>
             </VariousControls>
           </Cads>
           <Aads>
@@ -380,14 +380,14 @@
           <GroupName>Source</GroupName>
           <Files>
             <File>
-              <FileName>main.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>.\main.c</FilePath>
-            </File>
-            <File>
               <FileName>stm32f4xx_it.c</FileName>
               <FileType>1</FileType>
               <FilePath>.\stm32f4xx_it.c</FilePath>
+            </File>
+            <File>
+              <FileName>main.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>.\main.c</FilePath>
             </File>
           </Files>
         </Group>
@@ -406,7 +406,7 @@
       <api Capiversion="1.0.0" Cclass="Device" Cgroup="STM32Cube Framework" exclusive="1">
         <package name="STM32F4xx_DFP" schemaVersion="1.3" url="http://www.keil.com/pack" vendor="Keil" version="2.12.0"/>
         <targetInfos>
-          <targetInfo name="GPIO-Output"/>
+          <targetInfo name="GPIO-Input"/>
         </targetInfos>
       </api>
     </apis>
@@ -414,49 +414,49 @@
       <component Cclass="CMSIS" Cgroup="CORE" Cvendor="ARM" Cversion="5.1.1" condition="ARMv6_7_8-M Device">
         <package name="CMSIS" schemaVersion="1.3" url="http://www.keil.com/pack/" vendor="ARM" version="5.3.0"/>
         <targetInfos>
-          <targetInfo name="GPIO-Output"/>
+          <targetInfo name="GPIO-Input"/>
         </targetInfos>
       </component>
       <component Capiversion="1.0.0" Cclass="Device" Cgroup="STM32Cube Framework" Csub="Classic" Cvendor="Keil" Cversion="1.7.3" condition="STM32F4 Framework Classic">
         <package name="STM32F4xx_DFP" schemaVersion="1.3" url="http://www.keil.com/pack" vendor="Keil" version="2.12.0"/>
         <targetInfos>
-          <targetInfo name="GPIO-Output"/>
+          <targetInfo name="GPIO-Input"/>
         </targetInfos>
       </component>
       <component Cclass="Device" Cgroup="STM32Cube HAL" Csub="Common" Cvendor="Keil" Cversion="1.7.3" condition="STM32F4 HAL Common">
         <package name="STM32F4xx_DFP" schemaVersion="1.3" url="http://www.keil.com/pack" vendor="Keil" version="2.12.0"/>
         <targetInfos>
-          <targetInfo name="GPIO-Output"/>
+          <targetInfo name="GPIO-Input"/>
         </targetInfos>
       </component>
       <component Cclass="Device" Cgroup="STM32Cube HAL" Csub="Cortex" Cvendor="Keil" Cversion="1.7.3" condition="STM32F4 HAL">
         <package name="STM32F4xx_DFP" schemaVersion="1.3" url="http://www.keil.com/pack" vendor="Keil" version="2.12.0"/>
         <targetInfos>
-          <targetInfo name="GPIO-Output"/>
+          <targetInfo name="GPIO-Input"/>
         </targetInfos>
       </component>
       <component Cclass="Device" Cgroup="STM32Cube HAL" Csub="GPIO" Cvendor="Keil" Cversion="1.7.3" condition="STM32F4 HAL">
         <package name="STM32F4xx_DFP" schemaVersion="1.3" url="http://www.keil.com/pack" vendor="Keil" version="2.12.0"/>
         <targetInfos>
-          <targetInfo name="GPIO-Output"/>
+          <targetInfo name="GPIO-Input"/>
         </targetInfos>
       </component>
       <component Cclass="Device" Cgroup="STM32Cube HAL" Csub="PWR" Cvendor="Keil" Cversion="1.7.3" condition="STM32F4 HAL">
         <package name="STM32F4xx_DFP" schemaVersion="1.3" url="http://www.keil.com/pack" vendor="Keil" version="2.12.0"/>
         <targetInfos>
-          <targetInfo name="GPIO-Output"/>
+          <targetInfo name="GPIO-Input"/>
         </targetInfos>
       </component>
       <component Cclass="Device" Cgroup="STM32Cube HAL" Csub="RCC" Cvendor="Keil" Cversion="1.7.3" condition="STM32F4 HAL GPIO">
         <package name="STM32F4xx_DFP" schemaVersion="1.3" url="http://www.keil.com/pack" vendor="Keil" version="2.12.0"/>
         <targetInfos>
-          <targetInfo name="GPIO-Output"/>
+          <targetInfo name="GPIO-Input"/>
         </targetInfos>
       </component>
       <component Cclass="Device" Cgroup="Startup" Cvendor="Keil" Cversion="2.6.2" condition="STM32F4 CMSIS">
         <package name="STM32F4xx_DFP" schemaVersion="1.3" url="http://www.keil.com/pack" vendor="Keil" version="2.12.0"/>
         <targetInfos>
-          <targetInfo name="GPIO-Output"/>
+          <targetInfo name="GPIO-Input"/>
         </targetInfos>
       </component>
     </components>
@@ -466,7 +466,7 @@
         <component Capiversion="1.0.0" Cclass="Device" Cgroup="STM32Cube Framework" Csub="Classic" Cvendor="Keil" Cversion="1.7.3" condition="STM32F4 Framework Classic"/>
         <package name="STM32F4xx_DFP" schemaVersion="1.3" url="http://www.keil.com/pack" vendor="Keil" version="2.12.0"/>
         <targetInfos>
-          <targetInfo name="GPIO-Output"/>
+          <targetInfo name="GPIO-Input"/>
         </targetInfos>
       </file>
       <file attr="config" category="source" condition="STM32F407xx_ARMCC" name="Drivers\CMSIS\Device\ST\STM32F4xx\Source\Templates\arm\startup_stm32f407xx.s" version="2.6.2">
@@ -474,7 +474,7 @@
         <component Cclass="Device" Cgroup="Startup" Cvendor="Keil" Cversion="2.6.2" condition="STM32F4 CMSIS"/>
         <package name="STM32F4xx_DFP" schemaVersion="1.3" url="http://www.keil.com/pack" vendor="Keil" version="2.12.0"/>
         <targetInfos>
-          <targetInfo name="GPIO-Output"/>
+          <targetInfo name="GPIO-Input"/>
         </targetInfos>
       </file>
       <file attr="config" category="header" name="MDK\Templates\Inc\stm32f4xx_hal_conf.h" version="1.6.0">
@@ -482,7 +482,7 @@
         <component Capiversion="1.0.0" Cclass="Device" Cgroup="STM32Cube Framework" Csub="Classic" Cvendor="Keil" Cversion="1.7.3" condition="STM32F4 Framework Classic"/>
         <package name="STM32F4xx_DFP" schemaVersion="1.3" url="http://www.keil.com/pack" vendor="Keil" version="2.12.0"/>
         <targetInfos>
-          <targetInfo name="GPIO-Output"/>
+          <targetInfo name="GPIO-Input"/>
         </targetInfos>
       </file>
       <file attr="config" category="source" name="Drivers\CMSIS\Device\ST\STM32F4xx\Source\Templates\system_stm32f4xx.c" version="2.6.2">
@@ -490,7 +490,7 @@
         <component Cclass="Device" Cgroup="Startup" Cvendor="Keil" Cversion="2.6.2" condition="STM32F4 CMSIS"/>
         <package name="STM32F4xx_DFP" schemaVersion="1.3" url="http://www.keil.com/pack" vendor="Keil" version="2.12.0"/>
         <targetInfos>
-          <targetInfo name="GPIO-Output"/>
+          <targetInfo name="GPIO-Input"/>
         </targetInfos>
       </file>
     </files>
