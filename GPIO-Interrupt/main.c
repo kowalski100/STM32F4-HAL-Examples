@@ -68,8 +68,12 @@ void gpioConfig(void) {
   HAL_GPIO_Init(GPIOD, &GPIO_InitStruct);
   
   /*
-    Configure PD.14, PA.0 for Edge trigger interrupt generation
+    Configure PA.0 for Edge trigger interrupt generation
   */
+  
+    /* Enable clock to GPIO-D */
+  __HAL_RCC_GPIOA_CLK_ENABLE();
+
   GPIO_InitStruct.Pin     = GPIO_PIN_0;
   GPIO_InitStruct.Mode    = GPIO_MODE_IT_RISING;
   GPIO_InitStruct.Pull    = GPIO_PULLDOWN;
