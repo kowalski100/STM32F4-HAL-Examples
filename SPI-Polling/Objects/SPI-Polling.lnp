@@ -1,0 +1,19 @@
+--cpu=Cortex-M4.fp
+".\objects\main.o"
+".\objects\stm32f4xx_it.o"
+".\objects\startup_stm32f407xx.o"
+".\objects\system_stm32f4xx.o"
+".\objects\stm32f4xx_hal.o"
+".\objects\stm32f4xx_hal_cortex.o"
+".\objects\stm32f4xx_hal_dma.o"
+".\objects\stm32f4xx_hal_dma_ex.o"
+".\objects\stm32f4xx_hal_gpio.o"
+".\objects\stm32f4xx_hal_pwr.o"
+".\objects\stm32f4xx_hal_pwr_ex.o"
+".\objects\stm32f4xx_hal_rcc.o"
+".\objects\stm32f4xx_hal_rcc_ex.o"
+".\objects\stm32f4xx_hal_spi.o"
+--strict --scatter ".\Objects\SPI-Polling.sct"
+--summary_stderr --info summarysizes --map --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list ".\Listings\SPI-Polling.map" -o .\Objects\SPI-Polling.axf
